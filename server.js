@@ -13,11 +13,8 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 
 app.use('/campsites', campsiteRouter);
-app.use('/campsites/:campsiteId', campsiteRouter);
 app.use('/promotions', promotionRouter);
-app.use('/promotions/:promotionId', promotionRouter);
 app.use('/partners', partnerRouter);
-app.use('/partners/:partnerId', partnerRouter);
 
 
 app.use(express.static(__dirname + '/public'));
